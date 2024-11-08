@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math/CS Problem Log</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Problem Log</h1>
+    
+    <!-- Form to Add a New Problem -->
+    <form id="problemForm">
+        <input type="text" id="problemName" placeholder="Problem Name" required>
+        <input type="url" id="problemLink" placeholder="Problem Link (e.g., LeetCode URL)" required>
+        <input type="text" id="problemTags" placeholder="Tags (comma separated)">
+        <button type="submit">Add Problem</button>
+    </form>
+
+    <!-- Display Problems List -->
+    <div id="problemsList"></div>
+
+    <!-- Graph View -->
+    <h2>Graph View</h2>
+    <div id="graphContainer"></div>
+
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cytoscape/3.21.0/cytoscape.min.js"></script>
+</body>
+</html>
